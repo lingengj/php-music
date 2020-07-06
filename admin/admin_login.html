@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<style type="text/css">
+body{
+	background-image: url(../pic/01.jpg);
+	background-repeat: repeat;
+}
+#bg {
+	background-color: #CCC;
+	height: 280px;
+	width: 355px;
+	font-family: "微软雅黑";
+	font-size: 22px;
+	position: absolute;
+	padding-left: 50px;
+	padding-top: 30px;
+	left: 630px;
+	top: 280px;
+	border-radius: 5px;
+	border: 1px dashed #999;
+}
+#name,#pwd{
+	width:200px;
+	height:30px;
+}
+#pwd{
+	width:200px;
+	height:30px;
+}
+#code{
+	width:100px;
+	height:30px;
+}
+img{
+	position: relative;
+	left: 20px;
+	top: 12px;
+}
+input{
+	margin-bottom:10px;	
+}
+#buttom{
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	color: #666;
+}
+
+</style>
+</head>
+
+<body>
+<div id="bg">
+<table>
+<form name="login" method="post">
+	<tr><td>用户名：</td><td><input type="text"  name="uname"/ id="name" ></td></tr>
+    <tr><td>密码：</td><td><input type="password" name="pwd"  id="pwd"/></td></tr>
+    <tr><td>验证码：</td><td><input type="text"  name="ck" id="code"/><img src="code.php" onclick="this.src='code.php?'+Math.random()" /></td>
+    </tr>
+   <tr> <td></td><td><input type="submit" onclick="login.action='admin_login.php'" value="登录" id="buttom"/></td></tr>
+    </br>
+</form>
+</table>
+</div>
+</body>
+</html>

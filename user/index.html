@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body{
+	background-image: url(../pic/01.jpg);
+	background-repeat: repeat;
+}
+#container #box {
+	width: 470px;
+	position: absolute;
+	top: 150px;
+	right: 195px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: "微软雅黑";
+	font-size: 24px;
+}
+#header {
+	background-image: url(../pic/02.jpg);
+	opacity: 0.8;
+	height: 80px;
+	width: 470px;
+	background-position: center top;
+}
+#content {
+	background-color: #FFF;
+	height: 400px;
+}
+
+.one{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	padding-top: 55px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 80px;
+}
+#userName{
+	height: 32px;
+	width: 200px;
+	float: right;
+	margin-right: 80px;
+	font-size: 18px;
+}
+#pwd{
+	height: 32px;
+	width: 200px;
+	float: right;
+	margin-right: 80px;
+	font-size: 18px;
+}
+#code{
+	height: 32px;
+	width: 100px;
+	float: right;
+	margin-right: 180px;
+	font-size: 18px;
+}
+
+#button{
+	height: 45px;
+	width: 310px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #666;
+	position: relative;
+	left: 2px;
+	bottom: 25px;
+}
+#buttom ul {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #999;
+	list-style-type: none;
+	padding-top: 26px;
+	padding-left: 180px;
+	position: relative;
+	bottom: 30px;
+}
+#buttom ul li {
+	float: left;
+	padding-left: 15px;
+	text-decoration: underline;
+}
+#buttom ul li a {
+	color: #999;
+}
+#buttom ul li a:hover{
+	color: #666;
+}
+img{
+	position: relative;
+	left: 230px;
+	top: -31px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="box">
+  
+  <div id="header"></div>
+  
+    <div id="content">  
+    <form name="form1" method="post" action="login.php" class="one">
+        用户名：
+        <input type="text" name="userName" id="userName" size="12"/>
+        <br>
+        <br>
+        密&nbsp;&nbsp;     码：
+        <input type="password" name="pwd" id="pwd" size="12"/>
+        <br>
+        <br>
+        验证码：
+        <input type="text" name="code" id="code" size="6"/><img src="code.php" onclick="this.src='code.php?aa='+Math.random()"/>
+        <br>
+        <br>
+        <input type="submit" name="DL" id="button" value="登录" />
+      </form>
+        
+        
+    <div id="buttom">
+            <ul>
+            <li><a href="register.php">注册账号</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">意见反馈</a></li>
+            </ul>
+    </div>
+    </div>
+        
+        
+</div>
+        
+        
+
+    
+    
+</div>
+</body>
+</html>
